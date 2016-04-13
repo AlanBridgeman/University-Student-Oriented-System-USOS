@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="AlanBridgemanComp3010Namespace1"
+xmlns="AlanBridgemanComp3010Namespace1"
+elementFormDefault="qualified">
+
+<xs:element name="tutors">
+	<xs:complexType>
+		<xs:element name="tutor">
+			<xs:all>
+				<xs:element name="firstname" type="xs:string" />
+				<xs:element name="lastname" type="xs:string" />
+				<xs:element name="studentID">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:pattern value="[0-9]{8}" />
+							<xs:whiteSpace value="collapse" />
+							<xs:length value="8" />
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="email" type="xs:string" />
+				<xs:element name="phone">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:pattern value="([0-9]{3}-){3}" />
+							<xs:whiteSpace value="collapse" />
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="address" type="xs:string" />
+				<xs:element name="pay" type="xs:decimal" />
+				<xs:element name="courses">
+					<xs:complexType>
+						<xs:element name="course">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="number" type="xs:string" />
+									<xs:element name="name" type="xs:string" />
+									<xs:element name="grade">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="A+" />
+												<xs:enumeration value="A" />
+												<xs:enumeration value="A-" />
+												<xs:enumeration value="B+" />
+												<xs:enumeration value="B" />
+												<xs:enumeration value="B-" />
+												<xs:enumeration value="C+" />
+												<xs:enumeration value="C" />
+												<xs:enumeration value="C-" />
+												<xs:enumeration value="D" />
+												<xs:enumeration value="F" />
+											</xs:restriction>
+										</sx:simpleType>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:complexType>
+				</xs:element>
+			</xs:all>
+		</xs:element>
+	</xs:complexType>
+</xs:element>
+
+</xs:schema>

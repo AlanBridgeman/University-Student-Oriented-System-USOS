@@ -1,0 +1,37 @@
+/*
+ * Name: header-navigation.css
+ * Description: The style sheet for the site navigation (left side of the bar in the header)
+ * Author: Alan Bridgeman
+ * Date: 03-29-2016 (March 29, 2016)
+ */
+
+/* Provide metadata */
+@charset 'utf-8';
+
+body header nav {
+	float: left;
+	margin: 0;
+	padding: 0 0 0 5px;
+	width: 50%;
+}
+body header nav ul {
+	margin: 0;
+	padding: 0;
+}
+body header nav ul li {
+	margin: 0;
+	padding: 0 5px 0 0;
+	list-style-type: none;
+	display: inline-block;
+	text-align: center;
+	border-right: 2px solid black;
+}
+body header nav ul li.last {
+	border-right: 0;
+}
+body header nav ul li a {
+	color: black;
+}
+body header nav ul li a:hover {
+	color: white;
+}

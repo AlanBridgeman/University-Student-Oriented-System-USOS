@@ -1,0 +1,36 @@
+/*
+ * Name: style.css (Main Style)
+ * Description: The primary style sheet for the web-based application
+ * Author: Alan Bridgeman
+ * Date: 03-29-2016 (March 29, 2016)
+ */
+
+/* Provide metadata */
+@charset 'utf-8';
+
+/* Import the appropriate stylesheets */
+@import url('header.css');
+@import url('footer.css');
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #B0B0B0;
+}
+body main {
+	postion: relative;
+	width: 98%;
+	margin: auto;
+	margin-bottom: 10px;
+	padding: 0;
+	overflow: auto;
+	background-color: #F0E9DD;
+	box-shadow: 10px 10px 5px #A0A0A0;
+}
+body main form {
+	margin: 5px;
+}
+body footer {
+	float: left;
+	width: 100%;
+}

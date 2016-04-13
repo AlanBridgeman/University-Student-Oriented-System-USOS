@@ -1,0 +1,55 @@
+/*
+ * Name: header-user.css
+ * Description: The style sheet for the user portion of the header (right hand side of the header bar)
+ * Author: Alan Bridgeman
+ * Date: 03-29-2016 (March 29, 2016)
+ */
+
+/* Provide metadata */
+@charset 'utf-8';
+
+body header #userNavi {
+	float: left;
+	width: 49%;
+	text-align: right;
+}
+body header #userNavi ul {
+	margin: 0;
+	padding: 0;
+}
+body header #userNavi ul li {
+	margin: 0;
+	padding: 0 5px 0 0;
+	list-style-type: none;
+	display: inline-block;
+	text-align: center;
+	border-right: 2px solid black;
+}
+body header #userNavi ul li.last {
+	padding: 0;
+	border-right: 0;
+}
+body header #userNavi ul li a {
+	color: black;
+}
+body header #userNavi ul li a:hover {
+	color: white;
+}
+
+body header #login {
+	display: none;
+	visability: hidden;
+}
+body header #login input:focus {
+	outline: none;
+}
+body header #login input:invalid {
+	color: white;
+	background-color: red;
+	border-color:red;
+}
+body header #login input:not([type="submit"]):valid {
+	color: black;
+	background-color: white;
+	border-color: green;
+}

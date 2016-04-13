@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cdcatalog.xsl"?>
+
+<tutors
+xmlns="http://alanbridgeman.me"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://alanbridgeman.me tutor.xsd">
+	<tutor>
+		<firstname>Alan</firstname>
+		<lastname>Bridgeman</lastname>
+		<studentID>7747963</studentID>
+		<email>bridgema@myumanitoba.ca</email>
+		<phone>204-290-1205</phone>
+		<address>59 Simsbury Place</address>
+		<pay>10.25</pay>
+		<courses>
+			<course>
+				<number>COMP 1010</number>
+				<name>Introduction to Computer Scinece 1</name>
+				<grade>A+</grade>
+			</course>
+		</courses>
+	</tutor>
+</tutors>

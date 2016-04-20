@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteBase /
+
+# This Directive will make Apache look first
+# for "index_good.html" before looking for "index.html"
+DirectoryIndex index.php
+
+ErrorDocument 404 /edsa-USOS/error/Not_Found.php
